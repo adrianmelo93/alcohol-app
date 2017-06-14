@@ -1,0 +1,27 @@
+body{
+  background-image: url("http://www.bitcoincash.com/img/landing_themes/kiffer/background.jpg");
+
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  background: rgba(69, 67, 66, 0.74);
+  margin: 2rem;
+  padding: 5%;
+  border-radius: 11px;
+}
+
+.container input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+button {
+  margin: 1rem;
+}
