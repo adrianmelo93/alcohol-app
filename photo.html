@@ -12,9 +12,31 @@
     </nav>
   </div>
 </head>
-<body>
-  <div class="red">
+<body ng-app="RobotClicker" ng-controller="RobotController">
+  <img ng-click="handleClick()" src="http://icons.veryicon.com/ico/Food%20%26%20Drinks/Beer/Corona%20beer%20glass.ico" alt="Roobot">
+<h1>You have clicked {{numCilcks}} times</h1>
+<input type="text" ng-model="robotName">
+<h3>Your robot's name is {{robotName}}</h3>
 
-  </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+<script>
+var app = angular.module('RobotClicker', []);
+app.controller('RobotController', ['$scope', function($scope){
+$scope.numCilcks = 0;
+$scope.robotName = "Adrian";
+$scope.handleClick = function(){
+  $scope.numCilcks++;
+  if($scope.numCilcks >= 6){
+   return ("rfkgsdgkrw");
+  }
+
+}
+
+}]);
+
+
+</script>
+
+
 </body>
 </html>
