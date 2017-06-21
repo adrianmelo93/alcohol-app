@@ -1,7 +1,25 @@
 body{
-  /*background-image: url("https://ak2.picdn.net/shutterstock/videos/21797443/thumb/9.jpg");*/
+  background-image: url("https://ak2.picdn.net/shutterstock/videos/21797443/thumb/9.jpg");
 }
 
-/*h1, h3 {
+h1, h3 {
   color: white;
-}*/
+}
+
+a{
+  text-align: right;
+  font-size: 2rem;
+}
+
+.home-page {
+  display: flex;
+  justify-content: center;
+}
+
+.cont{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
+}
