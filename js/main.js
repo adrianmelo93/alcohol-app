@@ -21,12 +21,20 @@ $("#button").click(function ()
 //showing results
     if (dangerPerc <= limitOk)
     {
-      
-      $("#ok").addClass("answer");
+    $("show-message").addClass("green");
+    // $("show-massage").html("<h1> Possibly</h1>");
+
 
   } else if(dangerPerc>limitOk && dangerPerc <= limitMaybe){
+    $("show-message").addClass("yellow");
+    // $("show-message").html("<h1> Impaired</h1>");
+    // $("show-message").removeClass("green")
 
   }else{
+      $("show-message").addClass("red");
+      // $("show-message").html("<h1> Legally Intoxicated</h1>");
+      // $("show-message").removeClass("green, yellow")
+
 
   }
 });
