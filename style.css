@@ -2,11 +2,34 @@ body{
   background-image: url("http://www.bitcoincash.com/img/landing_themes/kiffer/background.jpg");
 
 }
+.collapse{
+  display: flex;
+  flex-direction: row;
+  background-color: #77AAAD;
+}
 
-.container{
+.nav{
+  display: flex;
+  flex-direction: row;
+}
+
+li{
+  list-style: none;
+}
+
+.small-img{
+  width: 5rem;
+
+}
+.presentation-img{
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-content: space-around;
+}
+
+.container{
+  display: flex;
   justify-content: space-around;
   background: rgba(69, 67, 66, 0.74);
   margin: 2rem;
@@ -41,27 +64,43 @@ a {
   font-size: 1.5rem;
 }
 
-h1{
+.first-text{
   text-align: center;
-}
-
- p {
   color: white;
-  font-size: 2rem;
 }
 
 .green {
   background-color: green;
-  width: 40px;
-  height: 20px;
+
 }
 .yellow {
   background-color: yellow;
-  width: 40px;
-  height: 20px;
 }
 .red {
   background-color: red;
-  width: 40px;
-  height: 20px;
 }
+
+.influence{
+  text-align: center;
+  color: white;
+}
+.letter{
+  color: white;
+    font-family: "Lucida Sans", sans-serif;
+}
+
+.container-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+    .controller{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .info-link{
+      color: white;
+    }

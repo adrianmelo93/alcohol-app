@@ -6,44 +6,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" -->
-  <div class="head">
-    <nav>
-      <a href="#">Home</a>
-      <a href="photo.html">Photo</a>
-      <a href="video.html">Video</a>
-    </nav>
-  </div>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
 
+    <nav class="navbar navbar-default navbar-fixed-top flex">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-center">
+                <li><a href="#">Home</a></li>
+                <li><a href="video.html">Videos</a></li>
+
+            </ul>
+        </div>
+    </nav>
   <title>App Alcohol</title>
 </head>
 
 <body>
-  <h1>Alcohol Test</h1>
+  <h1 class="first-text">Alcohol Test</h1>
 
+  <div class="presentation-img">
+    <h1>How many bottles did you drinks today?</h1>
+    <img class="small-img" src="https://www.actualidadgadget.com/wp-content/uploads/2009/06/coronanova_pro.jpg" alt="">
+
+  </div>
   <div class="container">
-    <div class="input-div ">
-      <h1>How many bottle your drinks today</h1>
-      <label for=""> Drink Count: <input id="calc" type="number" name="" value=""></label>
-      <label for=""> Person's Weight in LB: <input id="weight" type="number" name="" value=""></label>
+  <div class="container-center">
+      <form>
+        <table BORDER="1">
+          <tr>
+            <td class="letter">Drink Count</td>
+              <td>
+                <INPUT id="calc" TYPE="number" SIZE="10">
+              </td>
+        </tr>
+        <tr>
+          <td class="letter">Person's Weight in Pounds </td>
+            <td><input id="weight" TYPE="number" SIZE="10"></td>
+        </tr>
 
-        <SELECT id="select-gender">
-          <OPTION Value="male">Male</OPTION>
-          <OPTION Value="female">Female</OPTION>
-        </SELECT>
+      </table>
+      <SELECT id="select-gender">
+        <OPTION Value="male">Male</OPTION>
+        <OPTION Value="female">Female</OPTION>
+      </SELECT>
 
+      <button id="button" type="button" class="btn btn-default btn-lg btn-block">CHECK LEVEL</button>
+      <a class="info-link" target="blanck" href="http://www.businessinsider.com/drinks-before-driving-if-bac-is-05-2013-5">More info</a>
+    </form>
 
-
-      <button id="button" type="button" name="button">Test</button>
-
-      <div id="show-message">
-
-      </div>
     </div>
 
     <div class="img">
       <img src="./img/img-alcohol.jpg" alt="">
     </div>
+  </div>
+  <h1 class="influence">Influenced</h1>
+
+  <div class="controller" id="show-message">
+
   </div>
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>

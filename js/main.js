@@ -6,6 +6,11 @@ $("#button").click(function ()
   var sexType= $("#select-gender").val();
   var percSexType=0;
 
+  if(drinkCount === 0 || weight === 0){
+    alert("You need to fill out the information");
+    return false;
+  }
+
   if (sexType == "male"){
     percSexType=40;
   }else {
@@ -21,19 +26,22 @@ $("#button").click(function ()
 //showing results
     if (dangerPerc <= limitOk)
     {
-    $("show-message").addClass("green");
-    // $("show-massage").html("<h1> Possibly</h1>");
-
+      $("#show-message").animate({left: '250px'});
+    $("#show-message").addClass("green");
+    $("#show-message").html("<h1> Possibly </h1>");
+    $("#show-message").removeClass("yelow, red");
 
   } else if(dangerPerc>limitOk && dangerPerc <= limitMaybe){
-    $("show-message").addClass("yellow");
-    // $("show-message").html("<h1> Impaired</h1>");
-    // $("show-message").removeClass("green")
+    $("#show-message").animate({left: '250px'});
+    $("#show-message").addClass("yellow");
+    $("#show-message").html("<h1> Impaired</h1>");
+    $("#show-message").removeClass("green, red");
 
   }else{
-      $("show-message").addClass("red");
-      // $("show-message").html("<h1> Legally Intoxicated</h1>");
-      // $("show-message").removeClass("green, yellow")
+    $("#show-message").animate({left: '250px'});
+      $("#show-message").addClass("red");
+      $("#show-message").html("<h1> Legally Intoxicated</h1>");
+      $("#show-message").removeClass("green, yellow");
 
 
   }
