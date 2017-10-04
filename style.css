@@ -1,6 +1,9 @@
-body{
-  background-image: url("http://www.bitcoincash.com/img/landing_themes/kiffer/background.jpg");
+ body{
+  background-image: url("https://sergimateo.com/wp-content/2012/01/fondo-madera-negro.jpg");
 
+}
+h1{
+  color: white;
 }
 .collapse{
   display: flex;
